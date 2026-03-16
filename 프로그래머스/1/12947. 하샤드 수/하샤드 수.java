@@ -1,0 +1,18 @@
+import java.util.*;
+
+    class Solution {
+    public boolean solution(int x) {
+        
+        String s = String.valueOf(x);
+        int sum =0;
+        
+        for(int i=0; i<s.length(); i++){
+            int z = s.charAt(i) - '0';
+            sum += z;
+        }        
+
+        
+        
+        return x % sum == 0;
+    }
+}
